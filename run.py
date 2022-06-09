@@ -122,6 +122,14 @@ def order_successful():
     Notifies user that their order is complete.
     """
 
+    print("Your order is on its way!")
+    # Same function as used on the love_sandwiches walk through project
+    # by Code Institute
+    worksheet_to_update = SHEET.worksheet(‘sales’)
+    worksheet_to_update.append_row(data)
+
+    print("Your order is successful!")
+
 
 # Formatting
 def end_section():
