@@ -32,6 +32,15 @@ def user_info():
     """
     print("Let's start brewing!\n")
     print("First provide us with your name")
+    while True:
+        name = input("Enter your name here:\n").capitalize().strip()
+        
+        end_section()
+
+        if validate_username(name):
+            print(f"Hello {name}!\n")
+            break
+    return name
 
 
 def validate_username(name):
