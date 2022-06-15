@@ -49,15 +49,14 @@ class Customer:
         Calculate and return the total from the order based on the order list
     """
 
-    def __init__(self, name):
+    def __init__(self):
         """
         Instance attributes
         """
         self.order = []
-        self.name = name
+        self.user = self.user_info()
 
-    # User Information
-    def user_info():
+    def user_info(self):
         """
         Ask the user for their name to start order process.
         """
@@ -65,17 +64,16 @@ class Customer:
         print("First provide us with your name")
         while True:
             name = input("Enter your name here:\n").capitalize().strip()
-            
+                
             end_section()
 
             if validate_username(name):
                 print(f"Hello {name}!\n")
-                coffee_choice()
+                self.coffee_choice()
                 break
-        
-        return name
-
-    # Coffee Choice
+            
+            return name  
+    
     def coffee_choice(self):
         """
         Display coffee menu and ask user for their choice.
@@ -188,16 +186,5 @@ def main():
     # Welcome Message
     welcome_message()
     end_section()
-    user = user_info()
-    # collect order(s) from customer
-    # check if user is there
-    if user:
-        customer = Customer(user, name)
-        customer.coffee_choice()
-        customer.repeat_order()
-
-    else:
-        print("GOOD BYE!")
-
-
+    coffee = Customer()
 main()
