@@ -39,6 +39,12 @@ class Customer:
     --------
     user_info
         Return the customer full name
+    coffee_choice
+        Present user with a list of drink options
+    repeat_order
+        Provide the user with an opportunity to add a drink to their order
+    order_successful
+        Provide a user with a message to show order capture success
     customer_total
         Calculate and return the total from the order based on the order list
     """
