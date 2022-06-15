@@ -136,6 +136,12 @@ class Customer:
 
         # 1. get counts of things order
         cappuccinos_ordered = self.order.count("1")
+        latte_ordered = self.order.count("2")
+        americano_ordered = self.order.count("3")
+        vanilla latte_ordered = self.order.count("4")
+        caramel macchiato_ordered = self.order.count("5")
+        ceylon tea_ordered = self.order.count("6")
+        
         # 2. get total price
         worksheet_to_update = SHEET.worksheet("prices")
         cappuccino_price = worksheet_to_update.acell('B1').value
