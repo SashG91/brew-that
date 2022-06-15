@@ -24,24 +24,122 @@ def welcome_message():
     print("Welcome to BrewThat!\n")
     print("A mobile pitstop that fuels cyclists on their socials.")
 
-# User Information
-def user_info():
+class Customer:
     """
-    Ask the user for their name to start order process.
+    A class used to represent a Customer
+    
+    Attributes
+    -----------
+    name = str
+        the customer's first name
+    order = list
+        nested list with customer's order [name, value, quantity]
+   
+    Methods
+    --------
+    user_info
+        Return the customer full name
+    customer_total
+        Calculate and return the total from the order based on the order list
     """
-    print("Let's start brewing!\n")
-    print("First provide us with your name")
-    while True:
-        name = input("Enter your name here:\n").capitalize().strip()
+
+    def __init__(self, name):
+        """
+        Instance attributes
+        """
+        self.order = []
+        self.name = name
+
+    # User Information
+    def user_info():
+        """
+        Ask the user for their name to start order process.
+        """
+        print("Let's start brewing!\n")
+        print("First provide us with your name")
+        while True:
+            name = input("Enter your name here:\n").capitalize().strip()
+            
+            end_section()
+
+            if validate_username(name):
+                print(f"Hello {name}!\n")
+                coffee_choice()
+                break
         
+        return name
+
+    # Coffee Choice
+    def coffee_choice(self):
+        """
+        Display coffee menu and ask user for their choice.
+        """
+        print("Which coffee would you like to order?")
+        print("1 - Cappuccino")
+        print("2 - Latte")
+        print("3 - Americano")
+        print("4 - Vanilla Latte")
+        print("5 - Caramel Macchiato")
+        print("6 - Ceylon tea")
+        drink_choice = input("Enter your answer here:\n").strip()
+
+        print("\nYour order has been generated")
         end_section()
 
-        if validate_username(name):
-            print(f"Hello {name}!\n")
-            coffee_choice()
-            break
-    
-    return name
+        # Validate customer order
+        while drink_choice not in ("1", "2", "3"):
+            print("1 - Cappuccino")
+            print("2 - Latte")
+            print("3 - Americano")
+            print("4 - Vanilla Latte")
+            print("5 - Caramel Macchiato")
+            print("6 - Ceylon tea")
+            drink_choice = input("Enter your answer here:\n").strip()
+
+            end_section()
+
+        self.order.append(drink_choice)
+
+        self.repeat_order()
+
+    def repeat_order(self):
+        """
+        Allow the customer to add to their order.
+        """
+        print("Would you like to add anything else?")
+        print("1 - Yes")
+        print("2 - No\n")
+        repeat_order = input("Enter your answer here\n").strip()
+
+        if repeat_order == "1":
+            self.coffee_choice()
+
+        elif repeat_order == "2":
+            print("\nLet's start brewing!\n")
+            self.order_successful()
+
+    def order_successful(self):
+        """
+        Add sales count to the worksheet.
+        Notifies user that their order is complete.
+        """
+
+        print("Your order is on its way!")
+        # Same function as used on the love_sandwiches walk through project
+        # by Code Institute
+        worksheet_to_update = SHEET.worksheet("sales")
+        worksheet_to_update.append_row(data)
+
+        # 1. get counts of things order
+        cappuccinos_ordered = self.order.count("1")
+        # 2. get total price
+        worksheet_to_update = SHEET.worksheet("prices")
+        cappuccino_price = worksheet_to_update.acell('B1').value
+        # 3 write order to spread sheet
+        # 4 print order to terminal
+        
+
+        print("Your order is successful!")
 
 
 def validate_username(name):
@@ -67,69 +165,6 @@ def validate_username(name):
     
     return True
 
-# Coffee Choice
-def  coffee_choice():
-    """
-    Display coffee menu and ask user for their choice.
-    """
-    print("Which coffee would you like to order?")
-    print("1 - Cappuccino")
-    print("2 - Latte")
-    print("3 - Americano")
-    print("4 - Vanilla Latte")
-    print("5 - Caramel Macchiato")
-    print("6 - Ceylon tea")
-    drink_choice = input("Enter your answer here:\n").strip()
-
-    print("\nYour order has been generated")
-    end_section()
-    repeat_order()
-
-    #Validate customer order
-    while drink_choice not in ("1", "2", "3"):
-        print("1 - Cappuccino")
-        print("2 - Latte")
-        print("3 - Americano")
-        print("4 - Vanilla Latte")
-        print("5 - Caramel Macchiato")
-        print("6 - Ceylon tea")
-        drink_choice = input("Enter your answer here:\n").strip()
-    
-        end_section()
-
-    return drink_choice
-
-def repeat_order():
-    """
-    Allow the customer to add to their order.
-    """
-    print("Would you like to add anything else?")
-    print("1 - Yes")
-    print("2 - No\n")
-    repeat_order = input("Enter your answer here\n").strip()
-
-    if repeat_order == "1":
-        coffee_choice()
-    
-    elif repeat_order == "2":
-        print("\nLet's start brewing!\n")
-        order_successful()
-
-def order_successful():
-    """
-    Add sales count to the worksheet.
-    Notifies user that their order is complete.
-    """
-
-    print("Your order is on its way!")
-    # Same function as used on the love_sandwiches walk through project
-    # by Code Institute
-    worksheet_to_update = SHEET.worksheet("sales")
-    worksheet_to_update.append_row(data)
-
-    print("Your order is successful!")
-
-
 # Formatting
 def end_section():
     """
@@ -139,7 +174,6 @@ def end_section():
     print("# "* 25)
     print(" ")
 
-
 # Main
 def main():
     """
@@ -148,6 +182,16 @@ def main():
     # Welcome Message
     welcome_message()
     end_section()
-    user_info()
-    
-main() 
+    user = user_info()
+    # collect order(s) from customer
+    # check if user is there
+    if user:
+        customer = Customer(user, name)
+        customer.coffee_choice()
+        customer.repeat_order()
+
+    else:
+        print("GOOD BYE!")
+
+
+main()
