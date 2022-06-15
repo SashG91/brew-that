@@ -16,7 +16,6 @@ sales = SHEET.worksheet('sales')
 data = sales.get_all_values()
 
 # Welcome Message
-
 def welcome_message():
     """
     Welcome the customer to BrewThat.
@@ -125,7 +124,7 @@ def order_successful():
     print("Your order is on its way!")
     # Same function as used on the love_sandwiches walk through project
     # by Code Institute
-    worksheet_to_update = SHEET.worksheet(‘sales’)
+    worksheet_to_update = SHEET.worksheet("sales")
     worksheet_to_update.append_row(data)
 
     print("Your order is successful!")
