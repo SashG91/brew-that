@@ -136,7 +136,9 @@ class Customer:
         americanos_ordered = self.order.count("3")
         vanilla_lattes_ordered = self.order.count("4")
         caramel_macchiatos_ordered = self.order.count("5")
-        ceylon_teas_ordered = self.order.count("6")worksheet_to_update = SHEET.worksheet("sales")
+        ceylon_teas_ordered = self.order.count("6")
+        
+        worksheet_to_update = SHEET.worksheet("sales")
 
         cappucino_column = worksheet_to_update.col_values("1")
         latte_column = worksheet_to_update.col_values("2")
