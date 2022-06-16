@@ -19,7 +19,7 @@ data = sales.get_all_values()
 class Customer:
     """
     A class used to represent a Customer
-    ...
+    
     Attributes
     -----------
     first_name = str
@@ -30,6 +30,7 @@ class Customer:
         the customer's email
     order = list
         nested list with customer's order [name, value, quantity]
+   
     Methods
     --------
     customer_full_name

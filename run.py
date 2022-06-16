@@ -129,22 +129,37 @@ class Customer:
         """
 
         print("Your order is on its way!")
-        # Same function as used on the love_sandwiches walk through project
-        # by Code Institute
-        worksheet_to_update = SHEET.worksheet("sales")
-        worksheet_to_update.append_row(data)
 
         # 1. get counts of things order
         cappuccinos_ordered = self.order.count("1")
-        latte_ordered = self.order.count("2")
-        americano_ordered = self.order.count("3")
-        vanilla_latte_ordered = self.order.count("4")
-        caramel_macchiato_ordered = self.order.count("5")
-        ceylon_tea_ordered = self.order.count("6")
+        lattes_ordered = self.order.count("2")
+        americanos_ordered = self.order.count("3")
+        vanilla_lattes_ordered = self.order.count("4")
+        caramel_macchiatos_ordered = self.order.count("5")
+        ceylon_teas_ordered = self.order.count("6")
      
+        worksheet_to_update = SHEET.worksheet("sales")
+        cappucino_column = worksheet_to_update.col_values("1")
+        latte_column = worksheet_to_update.col_values("2")
+        americano_column = worksheet_to_update.col_values("3")
+        vanilla_latte_column = worksheet_to_update.col_values("4")
+        caramel_macchiato_column = worksheet_to_update.col_values("5")
+        ceylon_tea_column = worksheet_to_update.col_values("6")
+
+        if cappuccinos_ordered > 0:
+            cappucino_column.append(cappuccinos_ordered)
+        if lattes_ordered > 0:
+            latte_column.append(lattes_ordered)
+        if americanos_ordered > 0:
+            americano_column.append(americanos_ordered)
+        if vanilla_lattes_ordered > 0:
+            vanilla_latte_column.append(vanilla_latte_column)
+        if caramel_macchiatos_ordered > 0:
+            caramel_macchiato_column.append(caramel_macchiatos_ordered)
+        if ceylon_teas_ordered > 0:
+            ceylon_tea_column.append(ceylon_teas_ordered)
+        
         # 2. get total price
-        worksheet_to_update = SHEET.worksheet("prices")
-        cappuccino_price = worksheet_to_update.acell('B1').value
         # 3 write order to spread sheet
         # 4 print order to terminal
         
