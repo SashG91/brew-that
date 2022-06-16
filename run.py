@@ -136,9 +136,8 @@ class Customer:
         americanos_ordered = self.order.count("3")
         vanilla_lattes_ordered = self.order.count("4")
         caramel_macchiatos_ordered = self.order.count("5")
-        ceylon_teas_ordered = self.order.count("6")
-     
-        worksheet_to_update = SHEET.worksheet("sales")
+        ceylon_teas_ordered = self.order.count("6")worksheet_to_update = SHEET.worksheet("sales")
+
         cappucino_column = worksheet_to_update.col_values("1")
         latte_column = worksheet_to_update.col_values("2")
         americano_column = worksheet_to_update.col_values("3")
@@ -159,11 +158,10 @@ class Customer:
         if ceylon_teas_ordered > 0:
             ceylon_tea_column.append(ceylon_teas_ordered)
         
+        worksheet_to_update.append_row(self.order)
         # 2. get total price
         # 3 write order to spread sheet
         # 4 print order to terminal
-        
-
         print("Your order is successful!")
 
 
