@@ -1,20 +1,21 @@
-# PROJECT NAME
-*replace the **PROJECT NAME** header with your project's name*
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
+# Brew That
+Brew that is a python essentials terminal project that is run using the Code Institute mock terminal on Heroku.
+- Add views here
 
 ## Author
-DEVELOPER_NAME
+SASHEN GOVENDER
 
 ## Project Overview
+Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend.
+The goal of this project was to showcase my understand of python essentials and allow for future opportunities once my skillset has improved.
+
 - Include a recording of site that shows the terminal interaction.
   https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb is a very intuitive and free tool to do a web recording.
 - Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via git hub and it'll resovle itself.
-- One or two sentences providing an overview of your project.
-- Include a link to your deployed website
+- Click on this link to view the deployed site link [Deployed url](https://brew-that.herokuapp.com/) 
 
 ## Table of Contents
-Generate after readme is complete for UX and below
+GENERATE THIS LATER!!!
 
 ## How To Play/Use
 Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
