@@ -34,7 +34,7 @@ class Customer:
         the customer's first name
     order = list
         nested list with customer's order [name, value, quantity]
-   
+    
     Methods
     --------
     user_info
@@ -45,7 +45,7 @@ class Customer:
         Provide the user with an opportunity to add a drink to their order
     order_successful
         Provide a user with a message to show order capture success
-    customer_total
+    order_invoice
         Calculate and return the total from the order based on the order list
     """
 
@@ -142,7 +142,6 @@ class Customer:
         ceylon_tea_no = self.order.count("6")
         
         worksheet_to_update = SHEET.worksheet("sales")
-
         cappucino_column = worksheet_to_update.col_values("1")
         latte_column = worksheet_to_update.col_values("2")
         americano_column = worksheet_to_update.col_values("3")
@@ -170,7 +169,7 @@ class Customer:
 
     def order_invoice(self, capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no):
         """
-        Present user with order invoice once order is complete.
+        Calculate and return the total from the order based on the order list
         """
         if capps_no > 0:
             print(f"{capps_no} x cappucino = ${1,50 * capps_no}")
