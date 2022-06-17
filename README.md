@@ -34,7 +34,7 @@ This section includes both the implemented and future features associated with t
 ### Future Features
 
 * All program to distinguish between new and previous users.
-* Allow exiting and new users to register using an email address to build a profile.
+* Allow frequent and new users to register using an email address to build a profile.
 * Provide users with a credit balance according to their unique ID.
 
 
@@ -117,39 +117,14 @@ The easiest way to track defects is by using GITHUB's Issues to track these as i
 
 
 ### Defects of Note
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and link to them directly here.
+-Initializing the repeat order function to allow the users to add to their order.
+-Printing a list of items that were selected by the user.
 
 
 ### Outstanding Defects
-It's ok to not resolve all the defects you found as long as:
-- it does not impacting a user from completing a vital function on the website
-- it only affects a very small subset of users
-- is an extreme edge case that very few users would try
-
-If you know of something that isn't quite right, create an issue and  link to it here and explain why you chose not to resolve it. 
-
-Sometimes it's as simple, word wrapping issue that makes the site look odd at a certain screensize that you just didn't have time to fix due to the impending deadline and lack of skills. It's best to mention it but note why you allowed it to go live than let asccessors think you didn't notice it. 
-### Commenting Code
-
-Make sure you  use triple double quotes to document fuctions and classes.
- Here'a  documentation worthy example:
-```$python
-def yes_no(question):
-    """
-    Function to ask a simple yes no question of the user.
-    :param question: String displayed as the question
-    :return: answer: String equal to "1" or "2" representing yes or no respectfully
-    """
-    print(question)
-    print("yes = 1")
-    print("no = 2")
-    answer = input("enter your answer here \n").strip()
-    while answer not in ("1", "2"):
-        print("please choose 1 for yes and 2 for no")
-        answer = input("enter your answer here \n").strip()
-    return answer
-
-```
+Below is a list of defect/s that were not resolved, but do not influence the core experience for the user.
+- Unable to complete function that allows the admin to print sales data to GoogleSheets.
+- Removing the round brackets from the prices for each item when shown in the Total cost section.
 
 ## Deployment
 
@@ -187,30 +162,18 @@ ex)
 4. Google Sheet Template
   - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
   - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
+
 ### Gitpod
-This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace.
+Before deploying, the Gitpod workspace needs the following setup steps for Heroku to build the project:
 
-If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
+1. Install the dependencies for Heroku using the following instruction to the terminal:
 ```$python
-{
-    "type": "service_account",
-    "project_id": "<YOUR_VALUE>",
-    "private_key_id": "<YOUR_VALUE>",
-    "private_key": "<YOUR_VALUE>",
-    "client_email": "<YOUR_VALUE>",
-    "client_id": "<YOUR_VALUE>",
-    "auth_uri": "https://accoutns.google.com/0/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cer_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "clien_x509_cert_url": "<YOUR_VALUE>"
-}
+pip3 freeze > requirements.txt
 ```
+<img width=“291” alt=“image” src=“https://user-images.githubusercontent.com/97494262/174004074-ad7dcaae-25cd-471c-b25a-4f8f0a7fbbbd.png”>
 
-If you have any dependencies, you should instruct users to install them
-```$python
-pip3 install -r requirements.txt
-```
-
+2. The project creds.json file from the Google Drive and Google Sheets API access used when adding Config Var, see example below:
+<img width=“624" alt=“Screenshot 2022-06-16 at 14 06 35” src=“https://user-images.githubusercontent.com/97494262/174003352-fba526ae-1358-4580-8628-1831d7817df2.png”>
 
 
 ### Heroku
