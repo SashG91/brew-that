@@ -1,5 +1,5 @@
 # Brew That
-Brew that is a python essentials terminal project that is run using the Code Institute mock terminal on Heroku.
+Brew That is a python essentials terminal project that is run using the Code Institute mock terminal on Heroku.
 <img width="952" alt="image" src="https://user-images.githubusercontent.com/97494070/174244013-d4b76bf3-86ad-4728-9153-b986ff1adf53.png">
 
 
@@ -68,9 +68,24 @@ To better group the game as an object, I wrote a class representing its properti
 - **\_\_str\_\_**: Returns a string representation of the class/object
 
 ## Libraries used
-List out the python libraries you purposefully used in your project and why. You can look at your requirements.txt file and go back to https://pypi.org/ to rediscover the purpose of a library if needed.
-
-A bulleted list is a good presentation for this information.
+* cachetools
+    - Python module which provides various memoizing collections and decorators.
+* google-auth
+     - This library simplifies using Google’s various server-to-server authentication mechanisms to access Google APIs.
+* google-auth-oauthlib
+    - This library provides oauthlib integration with google-auth.
+* gspread
+     - Interface for working with Google Sheets.
+* oauthlib
+    - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic for Python 3.6+.
+* pyasn1
+    - Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)
+* pyasn1-modules
+    - A collection of ASN.1 modules expressed in form of pyasn1 classes. Includes protocols PDUs definition (SNMP, LDAP etc.) and various data structures (X.509, PKCS etc.).
+* requests-oauthlib
+    - Provides first-class OAuth library support for Requests.
+* rsa
+    - It supports encryption and decryption, signing and verifying signatures, and key generation according to PKCS#1 version 1.5.
 
 ## Testing
 
@@ -292,11 +307,22 @@ On the settings tab you have to address two things:
 
 
 ## Credits
+* Code Institute: Love Sandwiches Project
+    - [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
+    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+    - Steps to declare and connect the Google APIs to my worksheet.
+    - Function to update the worksheet.
+    - Steps to deploy the project to Heroku.
+* Coders Bistro by arthur Mezaonik
+    - Deployment section steps in README.
+    - Libraries section used and descriptions in README.
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
+* Cara McAvinchey-Scoop project for direction and guidance on features.
+* Flowchart created using [diagrams.net](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse)
 
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
     - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
+* Deployment template for students to use for P3
 
 ### Content
 
@@ -308,7 +334,8 @@ Make a list of sites you used images from. If you used several sites try to matc
 
 ### Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
+*I would like to thank my mentor Malia Havlicek for facilitating both detailed and useful project meetings and the support of the CI tutor team for assisting with overcoming challenges during this project.
+* The tutors at Code Institute for their patience and support.
+* The Code Institute Slack community for tips and guidance.
 
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
 
