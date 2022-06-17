@@ -27,15 +27,20 @@ This section includes both the implemented and future features associated with t
 ### Implemented Features
 
 * Users are able to input their name to make their order personal.
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/97494070/174411545-2ccacac1-af58-4889-be29-3de61a53de8e.png">
+
 * Users can add to their order or proceed to submit order.
+<img width="736" alt="image" src="https://user-images.githubusercontent.com/97494070/174411569-1887d60d-a8ea-4de2-9e84-37bfc005312e.png">
+
 * Users are able to see a total cost and order list once agreeing to their order.
+<img width="741" alt="image" src="https://user-images.githubusercontent.com/97494070/174411590-3fb7c00e-bda4-49e3-9c81-89d2df2940b0.png">
 
 
 ### Future Features
 
-* All program to distinguish between new and previous users.
-* Allow frequent and new users to register using an email address to build a profile.
-* Provide users with a credit balance according to their unique ID.
+* Allow program to distinguish between new and previous users using a database according to an email.
+* Allow frequent and new users to build a profile and make drink suggestions based on their past purchases.
+* Provide users with a credit balance to make purchases.
 
 
 ## Design Documents
