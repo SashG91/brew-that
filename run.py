@@ -55,6 +55,7 @@ class Customer:
         """
         self.order = []
         self.user = self.user_info()
+        self.total_price = 0
 
     def user_info(self):
         """
@@ -99,12 +100,13 @@ class Customer:
             print("5 - Caramel Macchiato")
             print("6 - Ceylon tea")
             drink_choice = input("Enter your answer here:\n").strip()
-
             end_section()
 
         self.order.append(drink_choice)
 
         self.repeat_order()
+
+        return drink_choice
 
     def repeat_order(self):
         """
@@ -114,6 +116,7 @@ class Customer:
         print("1 - Yes")
         print("2 - No\n")
         repeat_order = input("Enter your answer here\n").strip()
+        end_section()
 
         if repeat_order == "1":
             self.coffee_choice()
@@ -131,12 +134,12 @@ class Customer:
         print("Your order is on its way!")
 
         # 1. get counts of things order
-        cappuccinos_ordered = self.order.count("1")
-        lattes_ordered = self.order.count("2")
-        americanos_ordered = self.order.count("3")
-        vanilla_lattes_ordered = self.order.count("4")
-        caramel_macchiatos_ordered = self.order.count("5")
-        ceylon_teas_ordered = self.order.count("6")
+        capps_no = self.order.count("1")
+        lattes_no = self.order.count("2")
+        americ_no = self.order.count("3")
+        vanil_latte_no = self.order.count("4")
+        car_macch_no = self.order.count("5")
+        ceylon_tea_no = self.order.count("6")
         
         worksheet_to_update = SHEET.worksheet("sales")
 
@@ -147,24 +150,44 @@ class Customer:
         caramel_macchiato_column = worksheet_to_update.col_values("5")
         ceylon_tea_column = worksheet_to_update.col_values("6")
 
-        if cappuccinos_ordered > 0:
-            cappucino_column.append(cappuccinos_ordered)
-        if lattes_ordered > 0:
-            latte_column.append(lattes_ordered)
-        if americanos_ordered > 0:
-            americano_column.append(americanos_ordered)
-        if vanilla_lattes_ordered > 0:
+        if capps_no > 0:
+            cappucino_column.append(capps_no)
+        if lattes_no > 0:
+            latte_column.append(lattes_no)
+        if americ_no > 0:
+            americano_column.append(americ_no)
+        if vanil_latte_no > 0:
             vanilla_latte_column.append(vanilla_latte_column)
-        if caramel_macchiatos_ordered > 0:
-            caramel_macchiato_column.append(caramel_macchiatos_ordered)
-        if ceylon_teas_ordered > 0:
-            ceylon_tea_column.append(ceylon_teas_ordered)
-        
+        if car_macch_no > 0:
+            caramel_macchiato_column.append(car_macch_no)
+        if ceylon_tea_no > 0:
+            ceylon_tea_column.append(ceylon_tea_no)
+            
         worksheet_to_update.append_row(self.order)
-        # 2. get total price
-        # 3 write order to spread sheet
-        # 4 print order to terminal
+        
         print("Your order is successful!")
+        self.order_invoice(capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no)
+
+    def order_invoice(self, capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no):
+        """
+        Present user with order invoice once order is complete.
+        """
+        if capps_no > 0:
+            print(f"{capps_no} x cappucino = ${1,50 * capps_no}")
+        if lattes_no > 0:
+            print(f"{lattes_no} x latte = ${2,75 * lattes_no}")
+        if americ_no > 0:
+            print(f"{americ_no} x latte = ${1,25 * americ_no}")
+        if vanil_latte_no > 0:
+            print(f"{vanil_latte_no} x latte = ${2,50 * vanil_latte_no}")
+        if car_macch_no > 0:
+            print(f"{car_macch_no} x latte = ${2,00 * car_macch_no}")
+        if ceylon_tea_no > 0:
+            print(f"{ceylon_tea_no} x latte = ${1,00 * ceylon_tea_no}")
+
+        total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + (1.25 * americ_no) + (2.50 * vanil_latte_no) + (2.00 * car_macch_no) + (1.00 * ceylon_tea_no)
+
+        print(f"Total cost: ${total_cost}")
 
 
 def validate_username(name):
