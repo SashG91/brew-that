@@ -1,10 +1,10 @@
-# Brew That
+# Project 3 Python Essentials: Brew That
 Brew That is a python essentials terminal project that is run using the Code Institute mock terminal on Heroku.
 <img width="952" alt="image" src="https://user-images.githubusercontent.com/97494070/174244013-d4b76bf3-86ad-4728-9153-b986ff1adf53.png">
 
 
 ## Author
-SASHEN GOVENDER
+Sashen Govender
 
 ## Project Overview
 Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend.
@@ -22,12 +22,7 @@ GENERATE THIS LATER!!!
 Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
 
 ## Features
-Use this section to itemize the features of your project. 
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-It's easiest to break this section down into piece parts or core functionality blocks such as data upload, user input, analysis and data output; focusing on the atomic functions and data model(s) or classes you created to make the program work. 
-
+This section includes both the implemented and future features associated with this project.
 
 ### Implemented Features
 
