@@ -7,7 +7,7 @@ Brew That is a python essentials terminal project that is run using the Code Ins
 Sashen Govender
 
 ## Project Overview
-Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend.
+Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend in a quick and streamlined way to get them riding again.
 The goal of this project was to showcase my understand of python essentials and allow for future opportunities once my skillset has improved.
 
 - Include a recording of site that shows the terminal interaction.
@@ -26,13 +26,13 @@ This section includes both the implemented and future features associated with t
 
 ### Implemented Features
 
-* Users are able to input their name to make their order personal.
+* Users are able to input their name to make their order personal. Program validates if the name is acceptable and proceeds if true.
 <img width="737" alt="image" src="https://user-images.githubusercontent.com/97494070/174411545-2ccacac1-af58-4889-be29-3de61a53de8e.png">
 
 * Users can add to their order or proceed to submit order.
 <img width="736" alt="image" src="https://user-images.githubusercontent.com/97494070/174411569-1887d60d-a8ea-4de2-9e84-37bfc005312e.png">
 
-* Users are able to see a total cost and order list once agreeing to their order.
+* Users are able to see a total cost and order list once agreeing to their order. Message indicating that order is successful and being made is presented.
 <img width="741" alt="image" src="https://user-images.githubusercontent.com/97494070/174411590-3fb7c00e-bda4-49e3-9c81-89d2df2940b0.png">
 
 
@@ -91,16 +91,12 @@ To better group the game as an object, I wrote a class representing its properti
     - It supports encryption and decryption, signing and verifying signatures, and key generation according to PKCS#1 version 1.5.
 
 ## Testing
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your features and ensure that they all work as intended in an easy and straightforward way for the users to achieve their goals.
-
+Testing results using validators, manual (tables) have been provided below.
 
 ### Validation Testing
-You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
+The pep8online validator was used to check the code for indentation and other generic errors. See results below.
 
-For each python file in your project, run it through the pep8online validator
-
-- [PEP8 Validator](http://pep8online.com/) include a screenshot of results
+- [PEP8 Validator](http://pep8online.com/) 
 
 Note any errors or warnings you are ignoring and why. 
 
@@ -133,40 +129,36 @@ Below is a list of defect/s that were not resolved, but do not influence the cor
 
 ## Deployment
 
-### Requirements
-If the user is required to have certain keys and credentials you should include this section with diretions on how to get the necessary information.
-ex)
-1. **Google Account:** In order to have this program work, you need a google account. If you don't have one  [Create a google account](https://accounts.google.com/Signup)
-2. **Google APIs**
-    1. in a new incognito tab, log into your new google account.
-    1. then update the url to be: https://console.cloud.google.com/getting-started?pli=1 
-        
-        **GOOGLE DRIVE API Access**
-        1.  create a new project for this, call it XXXXXX (You might want to refer to what you see in this video: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/ at the bottom of the screen to write out steps.)
-        2. Then click on Add APIs and Services and select Libraries
-        3. Search for Google Drive
-        4. Click Enable
-        5. Click Create Credentials
-        6. Select Google Drive API from the drop down, Application Data, then no and click the Next Button
-        7.  (https://developers.google.com/drive/api/v3/enable-drive-api) 
-        8. for service account details fill in a service account name ex) xxx_API, then click Create and Continue
-        9. For the Accoun acces, select Role: Basic/Editor then continue
-        10. Then Click Done
-        11. Now select the newly created service account
-        12. Click on the KEYS Tab
-        13. Click Add Key
-        14. Select JSON type (right click to show in folder so you know where the file was saved.
-        
-        **GOOGLE SHEETS API Access**
-        You may need to us the back button get to the APIS & SErvices section from where you were.
-        1. click the Libray  Tab and serarch for Google Sheets
-        2. click enable
+This application was deployed via Heroku
 
-3. The downloaded credentialsJSON file is basically your creds.json file that you need to put into your heroku settings or gitpod environment to access your google drive.
+- Log into Heroku.
+- Navigate to Dashboard.
+- Click "New" and select "create new app" from the drop-down menu. This is found in the upper right portion of the window. Provide a name for your application, this needs to be unique, and select your region.
 
-4. Google Sheet Template
-  - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
-  - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
+<img width="1003" alt="Screenshot 2022-06-15 at 23 07 47" src="https://user-images.githubusercontent.com/97494070/174413018-8de2decd-feca-49d2-ae70-f1180f61ae97.png">
+<img width="896" alt="Screenshot 2022-06-15 at 23 09 44" src="https://user-images.githubusercontent.com/97494070/174413019-09fcb2b2-6071-4974-88d2-435216d557d5.png">
+
+- Click "Create App".
+- Navigate to "Settings" and scroll down to "config vars".
+- Click "Reveal Config Var", in the field key I entered the CREDS word and in the value field I copied my creds.json content as past there.
+<img width="1227" alt="image" src="https://user-images.githubusercontent.com/97494070/174413116-971d7f47-d42d-4934-b3b5-529979c7d4fd.png">
+
+- Then scroll down to "build packs", click "build packs" and then click both "python" and "node.js"(node.js is needed for the mock terminal.)
+- <img width="605" alt="Screenshot 2022-06-15 at 23 12 27" src="https://user-images.githubusercontent.com/97494070/174413134-3cb79ed1-eb7f-41b5-ae4b-ec97fb0b447d.png">
+<img width="1222" alt="Screenshot 2022-06-15 at 23 13 16" src="https://user-images.githubusercontent.com/97494070/174413135-571e88e5-9e34-40c9-93df-80b3d8443b82.png">
+
+- Navigate to the "Deploy" section.
+- Scroll down to "Deployment Method" and select "GitHub".
+<img width="957" alt="Screenshot 2022-06-15 at 23 14 01" src="https://user-images.githubusercontent.com/97494070/174413189-4421636d-18b1-474b-aecc-57ff50b8c593.png">
+
+- Authorise the connection of Heroku to GitHub.
+- Search for your GitHub repository name, and select the correct repository.
+<img width="499" alt="Screenshot 2022-06-15 at 23 14 26" src="https://user-images.githubusercontent.com/97494070/174413228-3ba265e4-0a18-4596-9973-667845ebffa3.png">
+<img width="1253" alt="Screenshot 2022-06-15 at 23 21 05" src="https://user-images.githubusercontent.com/97494070/174413231-2771d724-2abd-4bd3-8e80-2182d0f46c79.png">
+
+- For Deployment there are two options, Automatic Deployments or Manual, I chose Automatic Deployment so Heroku will re-build each time code is pushed to GitHub.
+- Ensure the correct branch is selected "master/Main", and select the deployment method that you desire.
+<img width="1257" alt="Screenshot 2022-06-15 at 23 25 51" src="https://user-images.githubusercontent.com/97494070/174413303-6c7c69a2-1bc4-45c8-95b6-90f42f57a2dc.png">
 
 ### Gitpod
 Before deploying, the Gitpod workspace needs the following setup steps for Heroku to build the project:
