@@ -87,11 +87,11 @@ class Customer:
         print("6 - Ceylon tea")
         drink_choice = input("Enter your answer here:\n").strip()
 
-        print("\nYour order has been generated")
         end_section()
 
         # Validate customer order
-        while drink_choice not in ("1", "2", "3"):
+        while drink_choice not in ("1", "2", "3", "4", "5", "6"):
+            print("Which coffee would you like to order?")
             print("1 - Cappuccino")
             print("2 - Latte")
             print("3 - Americano")
