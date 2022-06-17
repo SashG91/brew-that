@@ -10,9 +10,9 @@ Sashen Govender
 Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend in a quick and streamlined way to get them riding again.
 The goal of this project was to showcase my understand of python essentials and allow for future opportunities once my skillset has improved.
 
-- Include a recording of site that shows the terminal interaction.
-  https://chrome.google.com/webstore/detail/loom-for-chrome/liecbddmkiiihnedobmlmillhodjkdmb is a very intuitive and free tool to do a web recording.
-- Then you can use https://cloudconvert.com/mp4-to-gif to convert the mp4 to a gif and just paste it into the readme via git hub and it'll resovle itself.
+- Below you can find the basic terminal interaction, this shows the interaction when all requirements are met from the user. Errors will be provided should invalid data be provided prompting the user to try again.
+![Screen Recording 2022-06-18 at 07 52 17](https://user-images.githubusercontent.com/97494070/174413697-839f8c94-ef4a-4457-bd3c-785c255c7983.gif)
+
 - Click on this link to view the deployed site link [Deployed url](https://brew-that.herokuapp.com/) 
 
 ## Table of Contents
