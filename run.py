@@ -73,7 +73,7 @@ class Customer:
                 self.coffee_choice()
                 break
             
-            return name  
+        return name  
     
     def coffee_choice(self):
         """
@@ -121,17 +121,19 @@ class Customer:
         if repeat_order == "1":
             self.coffee_choice()
 
-        elif repeat_order == "2":
+        if repeat_order == "2":
             print("\nLet's start brewing!\n")
             self.order_successful()
+
+        if repeat_order not in ("1", "2"):
+            print("Please enter number 1 or 2 to proceed")
+            self.repeat_order()
 
     def order_successful(self):
         """
         Add sales count to the worksheet.
         Notifies user that their order is complete.
         """
-
-        print("Your order is on its way!")
 
         # 1. get counts of things order
         capps_no = self.order.count("1")
