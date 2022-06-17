@@ -1,6 +1,7 @@
 # Brew That
 Brew that is a python essentials terminal project that is run using the Code Institute mock terminal on Heroku.
-- Add views here
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/97494070/174244013-d4b76bf3-86ad-4728-9153-b986ff1adf53.png">
+
 
 ## Author
 SASHEN GOVENDER
