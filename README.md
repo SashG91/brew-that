@@ -30,21 +30,24 @@ It's easiest to break this section down into piece parts or core functionality b
 
 
 ### Implemented Features
-In each subsection, write out what the feature is for and what value it adds. If there is terminal interaction or output associated with the function, include a screenshot.
+
+* Users are able to input their name to make their order personal.
+* Users can add to their order or proceed to submit order.
+* Users are able to see a total cost and order list once agreeing to their order.
 
 
 ### Future Features
 
-Use this section to discuss plans for additional features to be implemented in the future:
-
-If you end up not developing some features you hoped to implement, you can include those in this section.
+* All program to distinguish between new and previous users.
+* Allow exiting and new users to register using an email address to build a profile.
+* Provide users with a credit balance according to their unique ID.
 
 
 ## Design Documents
 
-This section is where you would share logic diagrams and spreadsheets that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser. 
+Below is a diagram showing the intended logic of the terminal project. Areas marked in orange (registration of user) should be regarded as a future feature and is not included in this deployment.
+<img width="834" alt="Screenshot 2022-06-17 at 14 45 11" src="https://user-images.githubusercontent.com/97494070/174320288-b51bcbf5-1ef4-4708-8469-ecc006fb99ad.png">
 
-The flowchart can be as simple as a picture of a drawing of how you envisioned laying out the logic for you project, or done with a professional tool such as powerpoint, googlesheets, or [https://app.diagrams.net/](https://app.diagrams.net/) They are a roadmap and do not have to be 100% accurate of the final product.
 
 ## Data Model/ Classes
 In this section write our your data model(s) or classes. 
@@ -109,58 +112,13 @@ There is a space before the # and after it to skip the quality assurance for tha
 
 ### Manual Testing
 
-Use Markdown to track how you tested each bit of user input for each valid option, various invalid entries and leading/trailing spaces
-
-**Feature 1**
-- [ ] invalid entry, says sorry and repropts
-- [ ] no entry, says sorry and reprompts
-- [ ] alpha when numeric expected, sorry and reprompts
-- [ ] valid entry with leading spaces, trimmed and shows proper next stage
-- [ ] valid entry with trailing spaces, trimed and shows proper next stage
-
-You should also call out how you tested any other features such as:
-- Welcome Message, recaps user name
-- Score update shows current score
-- color change for correct vs incorrect
-- google sheet updated properly
-
-If you prefer spreadsheets, create a googlesheet and link to it in this section, just make sure you update the permissions to allow anyone to view it.
+You can view manual testing for this project here: ADD LINK FOR GOOGLE SHEET!!
 
 ### Defect Tracking
 
 Try to create issues in real time as it better reflects the daily life of a developer.
 
 The easiest way to track defects is by using GITHUB's Issues to track these as it's really easy to copy/paste screenshots in and then write up how you closed them. At this stage you don't need a custom template or labels, that comes in P4.
-
-**Creating Defects**
-1. Click the Issues menu item 
-![image](https://user-images.githubusercontent.com/23039742/169566835-240ce89c-6ab1-45b6-8ee8-5f693de70e5d.png)
-
-2. click the Green New Issue button
-![image](https://user-images.githubusercontent.com/23039742/169567026-07ff2fb7-ebc0-4ce0-b8a8-38ab7da8844b.png)
-
-3. Fill in the default form
-![image](https://user-images.githubusercontent.com/23039742/169567286-c85218d1-1118-4472-93be-04eda040ecc5.png)
- - Fill in a descriptive title
- - add steps to reproduce if it's not straight forward
- - include a screenshot
-<img width="967" alt="image" src="https://user-images.githubusercontent.com/23039742/169567840-255b514c-0a1e-4514-8593-9c2aab295b6e.png">
-4. click the submit New issue button
-
-**Closing Defects**
-1. Go to the issue list in GitHub and click on the issue you have fixed 
-<img width="1476" alt="image" src="https://user-images.githubusercontent.com/23039742/169568053-6e34b94c-ff31-4d7f-9faf-1d04286f0397.png">
-
-2. Add a brief write up of what you fixed and include a screenshot if necessary then Click the Close with Comment Button
-![image](https://user-images.githubusercontent.com/23039742/169570025-6d559641-d573-4749-bc0f-33a151358481.png)
-
-**Reopening Defects**
-1. If you find you didn't fix the issue, you can toggle to the closed items:
-![image](https://user-images.githubusercontent.com/23039742/169570117-274898ec-ee02-487a-ac14-4755095d5e8a.png)
-
-2. Click on the issue you want to re-open
-3. Scroll down and click the re-open button
-![image](https://user-images.githubusercontent.com/23039742/169570383-9fc53595-1761-4117-a369-d798877c7fe2.png)
 
 
 ### Defects of Note
