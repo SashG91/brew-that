@@ -108,7 +108,7 @@ Below is a list of defect/s that were not resolved, but do not influence the cor
 
 ## Requirements
 You must have a Google spreasheet named Brew That with a tab called sales with the following columns.
-<img width="843" alt="image" src="https://user-images.githubusercontent.com/97494070/174421680-ab0f1e55-15ff-4bae-8c63-896f4e7a5517.png">
+<img width="852" alt="image" src="https://user-images.githubusercontent.com/97494070/174422602-3d829b79-1bc9-4c67-8036-d5cbe7a3ff77.png">
 
 
 ### Heroku
