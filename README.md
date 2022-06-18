@@ -84,7 +84,6 @@ You can view the data model for this application [here](https://docs.google.com/
     - It supports encryption and decryption, signing and verifying signatures, and key generation according to PKCS#1 version 1.5.
 
 ## Testing
-Testing results using validators, manual (tables) have been provided below.
 
 ### Validation Testing
 The pep8online validator was used to check the code for indentation and other generic errors. See results below.
@@ -94,13 +93,6 @@ The pep8online validator was used to check the code for indentation and other ge
 ### Manual Testing
 
 You can view manual testing for this project [here](https://docs.google.com/spreadsheets/d/1-48gLQhrg9fVBXcf1gJaQ-q30t13I0yI/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)
-
-### Defect Tracking
-
-Try to create issues in real time as it better reflects the daily life of a developer.
-
-The easiest way to track defects is by using GITHUB's Issues to track these as it's really easy to copy/paste screenshots in and then write up how you closed them. At this stage you don't need a custom template or labels, that comes in P4.
-
 
 ### Defects of Note
 -Initializing the repeat order function to allow the users to add to their order.
