@@ -61,7 +61,7 @@ Below is a diagram showing the intended logic of the terminal project. Areas mar
 
 ## Data Model/ Classes
 Below you can find a link that shows the data model(s) and class used for this project.
-
+You can view the data model for this application [here](https://docs.google.com/spreadsheets/d/1RJ4_lpXP1gQvgw3ujhy7llhUdO5Oe41z-9dLQ2SU6jY/edit?usp=sharing)
 
 ## Libraries used
 * cachetools
@@ -94,8 +94,6 @@ The pep8online validator was used to check the code for indentation and other ge
 ### Manual Testing
 
 You can view manual testing for this project [here](https://docs.google.com/spreadsheets/d/1-48gLQhrg9fVBXcf1gJaQ-q30t13I0yI/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)
-
-You can view the data model for this application [here](https://docs.google.com/spreadsheets/d/1RJ4_lpXP1gQvgw3ujhy7llhUdO5Oe41z-9dLQ2SU6jY/edit?usp=sharing)
 
 ### Defect Tracking
 
@@ -173,7 +171,6 @@ pip3 freeze > requirements.txt
     - Ideas for Deployment section steps in README.
     - Libraries section used and descriptions in README.
 
-* Cara McAvinchey- The Scoop project for direction and guidance on features.
 * Flowchart created using [diagrams.net](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse)
 
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
