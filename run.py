@@ -5,7 +5,7 @@ SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
     "https://www.googleapis.com/auth/drive"
-    ]
+]
 
 CREDS = Credentials.from_service_account_file('creds.json')
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
@@ -16,6 +16,8 @@ sales = SHEET.worksheet('sales')
 data = sales.get_all_values()
 
 # Welcome Message
+
+
 def welcome_message():
     """
     Welcome the customer to BrewThat.
@@ -24,17 +26,18 @@ def welcome_message():
     print("Welcome to BrewThat!\n")
     print("A mobile pitstop that fuels cyclists on their socials.")
 
+
 class Customer:
     """
     A class used to represent a Customer
-    
+
     Attributes
     -----------
     name = str
         the customer's first name
     order = list
     nested list with customer's order [name, value, quantity]
-    
+
     Methods
     --------
     user_info
@@ -65,16 +68,16 @@ class Customer:
         print("First provide us with your name")
         while True:
             name = input("Enter your name here:\n").capitalize().strip()
-                
+
             end_section()
 
             if validate_username(name):
                 print(f"Hello {name}!\n")
                 self.coffee_choice()
                 break
-            
-        return name  
-    
+
+        return name
+
     def coffee_choice(self):
         """
         Display coffee menu and ask user for their choice.
@@ -142,19 +145,20 @@ class Customer:
         vanil_latte_no = self.order.count("4")
         car_macch_no = self.order.count("5")
         ceylon_tea_no = self.order.count("6")
-        
-        worksheet_to_update = SHEET.worksheet("sales")    
+
+        worksheet_to_update = SHEET.worksheet("sales")
         worksheet_to_update.append_row([
-            capps_no, 
-            lattes_no, 
-            americ_no, 
-            vanil_latte_no, 
-            car_macch_no, 
+            capps_no,
+            lattes_no,
+            americ_no,
+            vanil_latte_no,
+            car_macch_no,
             ceylon_tea_no
-            ])
-        
+        ])
+
         print("Your order is successful!")
-        self.order_invoice(capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no)
+        self.order_invoice(capps_no, lattes_no, americ_no,
+                           vanil_latte_no, car_macch_no, ceylon_tea_no)
 
     def order_invoice(self, capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no):
         """
@@ -173,7 +177,9 @@ class Customer:
         if ceylon_tea_no > 0:
             print(f"{ceylon_tea_no} x latte = ${1,00 * ceylon_tea_no}")
 
-        total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + (1.25 * americ_no) + (2.50 * vanil_latte_no) + (2.00 * car_macch_no) + (1.00 * ceylon_tea_no)
+        total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + (1.25 * americ_no) + \
+            (2.50 * vanil_latte_no) + \
+            (2.00 * car_macch_no) + (1.00 * ceylon_tea_no)
 
         print(f"Total cost: ${total_cost}")
 
@@ -186,7 +192,7 @@ def validate_username(name):
         if name.isnumeric():
             raise ValueError(
                 "Enter your name with letters only please.")
-        
+
         if not name.isalpha():
             raise ValueError(
                 "Enter your name with letters only please.")
@@ -194,23 +200,27 @@ def validate_username(name):
         if len(name) < 2:
             raise ValueError(
                 "Please ensure that your name is more than two letters long.")
-    
+
     except ValueError as e:
         print(f"{e} \nPlease enter your name again.")
         return False
-    
+
     return True
 
 # Formatting
+
+
 def end_section():
     """
     Print ### to end each section.
     """
     print(" ")
-    print("# "* 25)
+    print("# " * 25)
     print(" ")
 
 # Main
+
+
 def main():
     """
     Run the main code functions
@@ -219,4 +229,6 @@ def main():
     welcome_message()
     end_section()
     coffee = Customer()
+
+
 main()
