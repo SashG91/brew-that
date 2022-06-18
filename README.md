@@ -106,6 +106,11 @@ Below is a list of defect/s that were not resolved, but do not influence the cor
 
 ## Deployment
 
+## Requirements
+You must have a Google spreasheet named Brew That with a tab called sales with the following columns.
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/97494070/174421680-ab0f1e55-15ff-4bae-8c63-896f4e7a5517.png">
+
+
 ### Heroku
 
 This application was deployed via Heroku
@@ -150,6 +155,8 @@ pip3 freeze > requirements.txt
 
 2. The project creds.json file from the Google Drive and Google Sheets API access used when adding Config Var, see example below:
 <img width="1244" alt="image" src="https://user-images.githubusercontent.com/97494070/174414699-1d288869-4b84-46ca-8800-7367ab8b781e.png">
+   - Create a Google account using this link [here](https://support.google.com/accounts/answer/27441?hl=en#)
+   - Create a project and enable the API to access the project using the link [here](https://developers.google.com/sheets/api/quickstart/python)
 
 ## Credits
 * Code Institute: Love Sandwiches Project
