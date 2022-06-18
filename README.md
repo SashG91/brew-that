@@ -90,8 +90,13 @@ You can view the data model for this application [here](https://docs.google.com/
 
 ### Validation Testing
 The pep8online validator was used to check the code for indentation and other generic errors. See results below.
+<img width="1079" alt="Screenshot 2022-06-18 at 11 10 16" src="https://user-images.githubusercontent.com/97494070/174422928-bfe05883-0af2-4328-98c3-e21f87491306.png">
 
-- [PEP8 Validator](http://pep8online.com/) 
+During final check was unable to reduce the length of following lines shown below.
+<img width="656" alt="image" src="https://user-images.githubusercontent.com/97494070/174423029-e8e7a67c-d9d8-4120-872d-e5d895a8b66f.png">
+
+<img width="1079" alt="Screenshot 2022-06-18 at 11 10 16" src="https://user-images.githubusercontent.com/97494070/174422928-bfe05883-0af2-4328-98c3-e21f87491306.png">
+
 
 ### Manual Testing
 
@@ -104,8 +109,7 @@ You can view manual testing for this project [here](https://docs.google.com/spre
 
 
 ### Outstanding Defects
-Below is a list of defect/s that were not resolved, but do not influence the core experience for the user.
-- Removing the round brackets from the prices for each item when shown in the Total cost section.
+None
 
 ## Deployment
 
