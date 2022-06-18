@@ -167,7 +167,7 @@ pip3 freeze > requirements.txt
     - Function to update the worksheet.
     - Steps to deploy the project to Heroku.
                 
-* Coders Bistro by arthur Mezaonik
+* Coders Bistro by Arthur Mezaonik & Dogs in the Hood by Obiageli Onyekpe
     - Ideas for Deployment section steps in README.
     - Libraries section used and descriptions in README.
 
