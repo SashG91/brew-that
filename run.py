@@ -180,15 +180,15 @@ class Customer:
         if capps_no > 0:
             print(f"{capps_no} x cappucino = {format_currency(1.50 * capps_no)}")
         if lattes_no > 0:
-            print(f"{lattes_no} x latte = ${2.75 * lattes_no}")
+            print(f"{lattes_no} x latte = {format_currency (2.75 * lattes_no)}")
         if americ_no > 0:
-            print(f"{americ_no} x latte = ${1.25 * americ_no}")
+            print(f"{americ_no} x latte = {format_currency (1.25 * americ_no)}")
         if vanil_latte_no > 0:
-            print(f"{vanil_latte_no} x latte = ${2.50 * vanil_latte_no}")
+            print(f"{vanil_latte_no} x latte = {format_currency (2.50 * vanil_latte_no)}")
         if car_macch_no > 0:
-            print(f"{car_macch_no} x latte = ${2.00 * car_macch_no}")
+            print(f"{car_macch_no} x latte = {format_currency (2.00 * car_macch_no)}")
         if ceylon_tea_no > 0:
-            print(f"{ceylon_tea_no} x latte = ${1.00 * ceylon_tea_no}")
+            print(f"{ceylon_tea_no} x latte = {(1.00 * ceylon_tea_no)}")
 
         total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + \
                      (1.25 * americ_no) + \
