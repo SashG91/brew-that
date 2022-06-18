@@ -18,7 +18,7 @@ The goal of this project was to showcase my understand of python essentials and 
 ## Table of Contents
 GENERATE THIS LATER!!!
 
-## How To Play/Use
+## How To Use
 1. The user initiates the progamme and is presented with a welcome message and asked to provide their name.
 <img width="740" alt="image" src="https://user-images.githubusercontent.com/97494070/174414219-cc8bd544-9f5d-4411-aa43-3646b8e0c7d8.png">
 
@@ -91,17 +91,11 @@ The pep8online validator was used to check the code for indentation and other ge
 
 - [PEP8 Validator](http://pep8online.com/) 
 
-Note any errors or warnings you are ignoring and why. 
-
-If the line is too long just add 
-```$python 
-# noqa
-```
-There is a space before the # and after it to skip the quality assurance for that line.
-
 ### Manual Testing
 
-You can view manual testing for this project here: ADD LINK FOR GOOGLE SHEET!!
+You can view manual testing for this project [here](https://docs.google.com/spreadsheets/d/1-48gLQhrg9fVBXcf1gJaQ-q30t13I0yI/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)
+
+You can view the data model for this application [here](https://docs.google.com/spreadsheets/d/1RJ4_lpXP1gQvgw3ujhy7llhUdO5Oe41z-9dLQ2SU6jY/edit?usp=sharing)
 
 ### Defect Tracking
 
@@ -113,7 +107,7 @@ The easiest way to track defects is by using GITHUB's Issues to track these as i
 ### Defects of Note
 -Initializing the repeat order function to allow the users to add to their order.
 -Printing a list of items that were selected by the user.
--Printing sales data to Googlesheets, error with not using an array.
+-Printing sales data to Googlesheets in the correct order, error with not using an array.
 
 
 ### Outstanding Defects
