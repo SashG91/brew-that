@@ -7,7 +7,7 @@ Brew That is a python essentials terminal project that is run using the Code Ins
 Sashen Govender
 
 ## Project Overview
-Brew that is a mobile coffee station that can be found along popular cycling routes and aims to fuel cyclist during their social rides on the weekend in a quick and streamlined way to get them riding again.
+Brew That is a mobile coffee station that services popular cycling routes and aims to fuel cyclist during their social rides on the weekend. The idea is to provide a quick and streamlined way to get them fuelled and riding again.
 The goal of this project was to showcase my understand of python essentials and allow for future opportunities once my skillset has improved.
 
 - Below you can find the basic terminal interaction, this shows the interaction when all requirements are met from the user. Errors will be provided should invalid data be provided prompting the user to try again.
