@@ -16,7 +16,32 @@ The goal of this project was to showcase my understand of python essentials and 
 - Click on this link to view the deployed site link [Deployed url](https://brew-that.herokuapp.com/) 
 
 ## Table of Contents
-GENERATE THIS LATER!!!
+- [Project 3 Python Essentials: Brew That](#project-3-python-essentials--brew-that)
+  * [Author](#author)
+  * [Project Overview](#project-overview)
+  * [Table of Contents](#table-of-contents)
+  * [How To Use](#how-to-use)
+  * [Features](#features)
+    + [Implemented Features](#implemented-features)
+    + [Future Features](#future-features)
+  * [Design Documents](#design-documents)
+  * [Data Model/ Classes](#data-model--classes)
+  * [Libraries used](#libraries-used)
+  * [Testing](#testing)
+    + [Validation Testing](#validation-testing)
+    + [Manual Testing](#manual-testing)
+    + [Defects of Note](#defects-of-note)
+    + [Outstanding Defects](#outstanding-defects)
+  * [Deployment](#deployment)
+  * [Requirements](#requirements)
+    + [Heroku](#heroku)
+    + [Gitpod](#gitpod)
+  * [Credits](#credits)
+    + [Media](#media)
+    + [Acknowledgments](#acknowledgments)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## How To Use
 1. The user initiates the progamme and is presented with a welcome message and asked to provide their name.
@@ -94,8 +119,6 @@ The pep8online validator was used to check the code for indentation and other ge
 
 During final check was unable to reduce the length of following lines shown below.
 <img width="656" alt="image" src="https://user-images.githubusercontent.com/97494070/174423029-e8e7a67c-d9d8-4120-872d-e5d895a8b66f.png">
-
-<img width="1079" alt="Screenshot 2022-06-18 at 11 10 16" src="https://user-images.githubusercontent.com/97494070/174422928-bfe05883-0af2-4328-98c3-e21f87491306.png">
 
 
 ### Manual Testing
