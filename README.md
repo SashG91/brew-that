@@ -113,11 +113,11 @@ The easiest way to track defects is by using GITHUB's Issues to track these as i
 ### Defects of Note
 -Initializing the repeat order function to allow the users to add to their order.
 -Printing a list of items that were selected by the user.
+-Printing sales data to Googlesheets, error with not using an array.
 
 
 ### Outstanding Defects
 Below is a list of defect/s that were not resolved, but do not influence the core experience for the user.
-- Unable to complete function that allows the admin to print sales data to GoogleSheets.
 - Removing the round brackets from the prices for each item when shown in the Total cost section.
 
 ## Deployment
