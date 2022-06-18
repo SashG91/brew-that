@@ -1,5 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
+from datetime import datetime
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -146,6 +148,8 @@ class Customer:
         car_macch_no = self.order.count("5")
         ceylon_tea_no = self.order.count("6")
 
+        now = datetime.now() # current date and time
+        date_time = now.strftime("%m/%d/%Y, %H:%M:%S")	
         worksheet_to_update = SHEET.worksheet("sales")
         worksheet_to_update.append_row([
             capps_no,
@@ -153,35 +157,45 @@ class Customer:
             americ_no,
             vanil_latte_no,
             car_macch_no,
-            ceylon_tea_no
+            ceylon_tea_no,
+            date_time
         ])
 
         print("Your order is successful!")
         self.order_invoice(capps_no, lattes_no, americ_no,
                            vanil_latte_no, car_macch_no, ceylon_tea_no)
 
-    def order_invoice(self, capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no):
+    def order_invoice(
+            self,
+            capps_no,
+            lattes_no,
+            americ_no,
+            vanil_latte_no,
+            car_macch_no,
+            ceylon_tea_no):
         """
         Calculate and return the total from the order based on the order list
         """
+
         if capps_no > 0:
-            print(f"{capps_no} x cappucino = ${1,50 * capps_no}")
+            print(f"{capps_no} x cappucino = {format_currency(1.50 * capps_no)}")
         if lattes_no > 0:
-            print(f"{lattes_no} x latte = ${2,75 * lattes_no}")
+            print(f"{lattes_no} x latte = ${2.75 * lattes_no}")
         if americ_no > 0:
-            print(f"{americ_no} x latte = ${1,25 * americ_no}")
+            print(f"{americ_no} x latte = ${1.25 * americ_no}")
         if vanil_latte_no > 0:
-            print(f"{vanil_latte_no} x latte = ${2,50 * vanil_latte_no}")
+            print(f"{vanil_latte_no} x latte = ${2.50 * vanil_latte_no}")
         if car_macch_no > 0:
-            print(f"{car_macch_no} x latte = ${2,00 * car_macch_no}")
+            print(f"{car_macch_no} x latte = ${2.00 * car_macch_no}")
         if ceylon_tea_no > 0:
-            print(f"{ceylon_tea_no} x latte = ${1,00 * ceylon_tea_no}")
+            print(f"{ceylon_tea_no} x latte = ${1.00 * ceylon_tea_no}")
 
-        total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + (1.25 * americ_no) + \
-            (2.50 * vanil_latte_no) + \
-            (2.00 * car_macch_no) + (1.00 * ceylon_tea_no)
+        total_cost = (1.50 * capps_no) + (2.75 * lattes_no) + \
+                     (1.25 * americ_no) + \
+                     (2.50 * vanil_latte_no) + \
+                     (2.00 * car_macch_no) + (1.00 * ceylon_tea_no)
 
-        print(f"Total cost: ${total_cost}")
+        print(f"Total cost: {format_currency(total_cost)}")
 
 
 def validate_username(name):
@@ -219,6 +233,10 @@ def end_section():
     print(" ")
 
 # Main
+
+
+def format_currency(amount):
+    return "${:,.2f}".format(amount)
 
 
 def main():
