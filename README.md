@@ -179,7 +179,7 @@ Before deploying, the Gitpod workspace needs the following setup steps for Herok
 ```$python
 pip3 freeze > requirements.txt
 ```
-<img width=“291” alt=“image” src=“https://user-images.githubusercontent.com/97494262/174004074-ad7dcaae-25cd-471c-b25a-4f8f0a7fbbbd.png”>
+<img width="583" alt="image" src="https://user-images.githubusercontent.com/97494070/174414657-e759681c-9b44-4da4-a001-35d2162cff29.png">
 
 2. The project creds.json file from the Google Drive and Google Sheets API access used when adding Config Var, see example below:
 <img width=“624" alt=“Screenshot 2022-06-16 at 14 06 35” src=“https://user-images.githubusercontent.com/97494262/174003352-fba526ae-1358-4580-8628-1831d7817df2.png”>
