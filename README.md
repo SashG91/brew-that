@@ -19,7 +19,17 @@ The goal of this project was to showcase my understand of python essentials and 
 GENERATE THIS LATER!!!
 
 ## How To Play/Use
-Paragraph or bullet points of how the user initiates the program and interfaces with it. You could have videos of each bit if you want and ditact what the user should do.
+1. The user initiates the progamme and is presented with a welcome message and asked to provide their name.
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/97494070/174414219-cc8bd544-9f5d-4411-aa43-3646b8e0c7d8.png">
+
+2. The user is then presented with a drinks menu order options 1-6 and required to input a numeric value. Should the user input any other value they will be presented with the menu again (repeat order function).
+<img width="740" alt="image" src="https://user-images.githubusercontent.com/97494070/174414369-e69e7e5b-d6b9-49ef-ab9b-8ed7c34e9bd9.png">
+
+3. User is then asked if they would like to add to their order or not. If yes, the user is taken back to the menu.
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/97494070/174414394-c29cec83-a7da-4f26-9abf-eab7b444c2fe.png">
+
+4. Once the user chooses no, they will be taken to the total cost section that shows a summary of the order with the total cost.
+<img width="738" alt="image" src="https://user-images.githubusercontent.com/97494070/174414453-b74cde8f-864e-4946-9b2e-c190cb2de161.png">
 
 ## Features
 This section includes both the implemented and future features associated with this project.
@@ -129,6 +139,8 @@ Below is a list of defect/s that were not resolved, but do not influence the cor
 
 ## Deployment
 
+### Heroku
+
 This application was deployed via Heroku
 
 - Log into Heroku.
@@ -173,52 +185,6 @@ pip3 freeze > requirements.txt
 <img width=“624" alt=“Screenshot 2022-06-16 at 14 06 35” src=“https://user-images.githubusercontent.com/97494262/174003352-fba526ae-1358-4580-8628-1831d7817df2.png”>
 
 
-### Heroku
-This section should describe the process you went through to deploy the project to Heroku. Include screenshots if you think they would make the process easier.
-
-You may want to re-watch the [python essentials deployment video](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/e3b664e16366444c8d722c5d8340b340/?child=first) when writing up this section.
-
-
-If you have project settings required for Heroku, provide a table of the keys and values.
-Do not share your personal keys but either cut them out of the screen shot or say <YOUR_VALUE> and include links on how the user would obtain such values.
-
-#### Fork the repository
-Make a fork so you have a copy of the repository in your own git hub account: https://github.com/maliahavlicek/portfolio_project_03
-
-![image](https://user-images.githubusercontent.com/23039742/132136504-eb79a6f3-0205-4c82-80c2-eef136ec7e4c.png)
-
-
-#### New Project
-Log into Heroku and create a new project. Name it something like XXX_coders_bistro.
-
-
-#### Settings
-On the settings tab you have to address two things:
-1. **Config Vars**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135869-215d2e0f-805d-40a8-a8c2-fb1098e2645d.png)
-
-  At a bar minimum you should show the user that they need to add the PORT. 8000 key value pair.
-
-
-2. **Build Packs**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135918-28cac112-7766-4277-905c-4a4963d8442d.png)
-
-  add Python Then Node.js
-
-
-#### Deploy
-1. Set up to github and select the correct repository:
-
-  ![image](https://user-images.githubusercontent.com/23039742/132136113-c257c921-d10c-4ccc-af09-6a1d25136395.png)
-
-2. Deploy either manual or automatic
-
-![image](https://user-images.githubusercontent.com/23039742/132136241-9d76fabb-39f0-4696-bc5f-047398fdaf41.png) 
-
-
-
 ## Credits
 * Code Institute: Love Sandwiches Project
     - [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
@@ -226,29 +192,23 @@ On the settings tab you have to address two things:
     - Steps to declare and connect the Google APIs to my worksheet.
     - Function to update the worksheet.
     - Steps to deploy the project to Heroku.
+                
 * Coders Bistro by arthur Mezaonik
-    - Deployment section steps in README.
+    - Ideas for Deployment section steps in README.
     - Libraries section used and descriptions in README.
 
-* Cara McAvinchey-Scoop project for direction and guidance on features.
+* Cara McAvinchey- The Scoop project for direction and guidance on features.
 * Flowchart created using [diagrams.net](https://www.geeksforgeeks.org/python-randint-function/?ref=gcse)
 
 -[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
     - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
 * Deployment template for students to use for P3
 
-### Content
-
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
-
 ### Media
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+No images were used.
 
 ### Acknowledgments
 
 *I would like to thank my mentor Malia Havlicek for facilitating both detailed and useful project meetings and the support of the CI tutor team for assisting with overcoming challenges during this project.
 * The tutors at Code Institute for their patience and support.
 * The Code Institute Slack community for tips and guidance.
-
-
