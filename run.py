@@ -33,7 +33,7 @@ class Customer:
     name = str
         the customer's first name
     order = list
-        nested list with customer's order [name, value, quantity]
+    nested list with customer's order [name, value, quantity]
     
     Methods
     --------
@@ -143,28 +143,15 @@ class Customer:
         car_macch_no = self.order.count("5")
         ceylon_tea_no = self.order.count("6")
         
-        worksheet_to_update = SHEET.worksheet("sales")
-        cappucino_column = worksheet_to_update.col_values("1")
-        latte_column = worksheet_to_update.col_values("2")
-        americano_column = worksheet_to_update.col_values("3")
-        vanilla_latte_column = worksheet_to_update.col_values("4")
-        caramel_macchiato_column = worksheet_to_update.col_values("5")
-        ceylon_tea_column = worksheet_to_update.col_values("6")
-
-        if capps_no > 0:
-            cappucino_column.append(capps_no)
-        if lattes_no > 0:
-            latte_column.append(lattes_no)
-        if americ_no > 0:
-            americano_column.append(americ_no)
-        if vanil_latte_no > 0:
-            vanilla_latte_column.append(vanilla_latte_column)
-        if car_macch_no > 0:
-            caramel_macchiato_column.append(car_macch_no)
-        if ceylon_tea_no > 0:
-            ceylon_tea_column.append(ceylon_tea_no)
-            
-        worksheet_to_update.append_row(self.order)
+        worksheet_to_update = SHEET.worksheet("sales")    
+        worksheet_to_update.append_row([
+            capps_no, 
+            lattes_no, 
+            americ_no, 
+            vanil_latte_no, 
+            car_macch_no, 
+            ceylon_tea_no
+            ])
         
         print("Your order is successful!")
         self.order_invoice(capps_no, lattes_no, americ_no, vanil_latte_no, car_macch_no, ceylon_tea_no)
