@@ -95,9 +95,9 @@ The pep8online validator was used to check the code for indentation and other ge
 You can view manual testing for this project [here](https://docs.google.com/spreadsheets/d/1-48gLQhrg9fVBXcf1gJaQ-q30t13I0yI/edit?usp=sharing&ouid=116957584173833035665&rtpof=true&sd=true)
 
 ### Defects of Note
--Initializing the repeat order function to allow the users to add to their order.
--Printing a list of items that were selected by the user.
--Printing sales data to Googlesheets in the correct order, error with not using an array.
+-Initializing the repeat order function to allow the users to add to their order [here](https://github.com/SashG91/brew-that/issues/2)
+-Printing a list of items that were selected by the user, see link [here](https://github.com/SashG91/brew-that/issues/4)
+-Printing sales data to Googlesheets in the correct order, error with not using an array [here](https://github.com/SashG91/brew-that/issues/1)
 
 
 ### Outstanding Defects
