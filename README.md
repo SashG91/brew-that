@@ -93,7 +93,7 @@ You can view the data model for this application [here](https://docs.google.com/
 
 ## Libraries used
 * cachetools
-    - Python module which provides various memoizing collections and decorators.
+    - Python module which provides various memorizing collections and decorators.
 * google-auth
      - This library simplifies using Google’s various server-to-server authentication mechanisms to access Google APIs.
 * google-auth-oauthlib
@@ -137,7 +137,7 @@ None
 ## Deployment
 
 ## Requirements
-You must have a Google spreasheet named Brew That with a tab called sales with the following columns.
+You must have a Google spreadsheet named Brew That with a tab called sales with the following columns.
 <img width="852" alt="image" src="https://user-images.githubusercontent.com/97494070/174422602-3d829b79-1bc9-4c67-8036-d5cbe7a3ff77.png">
 
 
