@@ -45,6 +45,9 @@ This section includes both the implemented and future features associated with t
 * Users are able to see a total cost and order list once agreeing to their order. Message indicating that order is successful and being made is presented.
 <img width="741" alt="image" src="https://user-images.githubusercontent.com/97494070/174411590-3fb7c00e-bda4-49e3-9c81-89d2df2940b0.png">
 
+* Admin is able to access the Googlesheets for this application to view daily order count and popular days/times.
+<img width="852" alt="image" src="https://user-images.githubusercontent.com/97494070/174422638-57ecdc71-b8d6-42bd-b1d7-91d4085dd669.png">
+
 
 ### Future Features
 
