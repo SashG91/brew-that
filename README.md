@@ -120,7 +120,7 @@ This application was deployed via Heroku
 - Click "Create App".
 - Navigate to "Settings" and scroll down to "config vars".
 - Click "Reveal Config Var", in the field key I entered the CREDS word and in the value field I copied my creds.json content as past there.
-<img width="1227" alt="image" src="https://user-images.githubusercontent.com/97494070/174413116-971d7f47-d42d-4934-b3b5-529979c7d4fd.png">
+![image](https://user-images.githubusercontent.com/97494070/174421597-8c01aeed-b518-4250-aa1b-6e2ed01e4d22.png)
 
 - Then scroll down to "build packs", click "build packs" and then click both "python" and "node.js"(node.js is needed for the mock terminal.)
 - <img width="605" alt="Screenshot 2022-06-15 at 23 12 27" src="https://user-images.githubusercontent.com/97494070/174413134-3cb79ed1-eb7f-41b5-ae4b-ec97fb0b447d.png">
